@@ -1,7 +1,5 @@
-@import "tailwindcss";
-
-/* Your custom fonts and variables here */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
