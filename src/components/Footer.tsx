@@ -5,17 +5,17 @@ export function Footer() {
   // Make sure the Facebook URL is updated for your page
   const socialLinks = [
     { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@agapezeortodox/playlists" },
-    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/yourpage" },
+    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/medehaniyalem" },
     { icon: Mail, label: "Email", href: "mailto:contact@example.com" },
   ];
 
   return (
     <footer className="bg-[#0033A0] text-white py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* Brand/Copyright */}
-          <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
-            <img src={logo} alt="ዓጋፔ ኦርቶዶክስ Logo" className="h-16 w-auto" />
+          <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
+            <img src={logo} alt="ዓጋፔ ኦርቶዶክስ Logo" className="w-auto h-16" />
             <p className="text-[#FFD700] font-bold text-xl">ዓጋፔ ኦርቶዶክስ</p>
           </div>
 
@@ -40,8 +40,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t border-white/10 text-center text-blue-200">
-          <p className="flex items-center justify-center gap-2 flex-wrap text-base">
+        <div className="pt-8 mt-8 text-center text-blue-200 border-t border-white/10">
+          <p className="flex flex-wrap items-center justify-center gap-2 text-base">
             <span>© 2025 ዓጋፔ ኦርቶዶክስ. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
           </p>

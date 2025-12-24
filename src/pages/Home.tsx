@@ -34,8 +34,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       title: "Worship & Praise Sessions",
       description:
         "Uplifting worship music, hymns, and praise sessions to inspire your devotion and draw you closer to God through song.",
-      image:
-        "https://images.unsplash.com/photo-1553404954-7858899788e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3JzaGlwJTIwbXVzaWMlMjBwcmFpc2V8ZW58MXx8fHwxNzYyNzU5NjMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://694bbaf8f54bb99ca8ce9dcc.imgix.net/Worship.jpg",
       tags: ["Worship", "Music"],
       url: "https://www.youtube.com/@agapezeortodox/playlists",
     },
@@ -90,13 +89,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
       />
 
       {/* About Section */}
-      <section id="about" className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <section id="about" className="py-16 bg-white md:py-24">
+        <div className="container px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-[#0033A0] mb-6">
               About ዓጋፔ ኦርቶዶክስ
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="mb-6 text-gray-600">
               ዓጋፔ ኦርቶዶክስ (Agape Orthodox) is a spiritual
               community dedicated to spreading the Gospel of
               Jesus Christ and nurturing believers in their
@@ -105,7 +104,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               sessions, and reflections rooted in Orthodox
               Christian tradition.
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="mb-6 text-gray-600">
               Our mission is to provide accessible spiritual
               resources that inspire, educate, and uplift
               believers around the world. We believe in the
@@ -130,17 +129,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
         id="videos"
         className="py-16 md:py-24 bg-gray-50"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-12">
+        <div className="container px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="mb-12 text-center">
             <h2 className="text-[#FFD700] mb-4">
               Featured Playlists
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-600">
               Discover curated YouTube playlists on faith,
               spirituality, and teaching.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {featuredPlaylists.map((playlist) => (
               <PlaylistCard
                 key={playlist.id}
@@ -152,31 +151,31 @@ export function HomePage({ onNavigate }: HomePageProps) {
               />
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="mt-12 text-center">
             <button
               onClick={() => onNavigate("videos")}
               className="inline-flex items-center gap-2 bg-[#0033A0] text-white px-8 py-4 rounded-lg hover:bg-[#FFD700] hover:text-[#0033A0] transition-colors"
             >
               View All Playlists
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-12">
+      <section id="blog" className="py-16 bg-white md:py-24">
+        <div className="container px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="mb-12 text-center">
             <h2 className="text-[#FFD700] mb-4">
               Latest Blog Posts
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto text-gray-600">
               Words and reflections originally shared on
               Facebook and beyond.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {recentBlogPosts.map((post) => (
               <BlogCard
                 key={post.id}
@@ -189,13 +188,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               />
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="mt-12 text-center">
             <button
               onClick={() => onNavigate("blog")}
               className="inline-flex items-center gap-2 bg-[#0033A0] text-white px-8 py-4 rounded-lg hover:bg-[#FFD700] hover:text-[#0033A0] transition-colors"
             >
               View All Blog Posts
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -206,14 +205,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
         id="contact"
         className="py-16 md:py-24 bg-gradient-to-br from-[#0033A0] to-[#0044C0] text-white"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="mb-6">Get in Touch</h2>
             <p className="mb-8 text-blue-100">
               Reach out for spiritual guidance, inquiries, or
               support.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
                 href="mailto:contact@example.com"
                 className="bg-[#FFD700] text-[#0033A0] px-8 py-3 rounded-lg hover:bg-[#FFD700]/90 transition-colors inline-block"
@@ -222,12 +221,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </a>
               <a
                 href="#"
-                className="bg-white/10 text-white px-8 py-3 rounded-lg hover:bg-white/20 transition-colors inline-block border border-white/20"
+                className="inline-block px-8 py-3 text-white transition-colors border rounded-lg bg-white/10 hover:bg-white/20 border-white/20"
               >
                 Donate
               </a>
               <a
-                href="https://www.facebook.com/yourpage"
+                href="https://www.facebook.com/medehaniyalem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-[#0033A0] px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors inline-block"
